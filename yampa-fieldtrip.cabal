@@ -1,0 +1,30 @@
+Name:                yampa-fieldtrip
+Version:             0.1.0
+Cabal-Version:       >= 1.4
+Synopsis:            Connects Yampa and FieldTrip
+Category:            FRP, graphics
+Description:
+  This package contains an adapter that connects FieldTrip to the
+  FRP library \"Yampa\".
+  .
+  &#169; 2012 by Nikolay Orlyuk; BSD3 license.
+
+Author:              Nikolay Orlyuk
+Maintainer:          virkony@gmail.com
+-- Homepage:            TODO
+-- Package-Url:         TODO
+Copyright:           (c) 2012 by Nikolay Orlyuk
+License:             GPL-2
+License-File:        COPYING
+Stability:           experimental
+build-type:          Simple
+Extra-Source-Files:  example.hs
+
+Library
+  Extensions:
+  Build-Depends:       base<5, yampa-glut, Yampa >= 0.9.3, GLUT, FieldTrip >= 0.2.7
+
+  Exposed-Modules:     
+                       FRP.Yampa.FieldTrip.Adapter
+
+  ghc-options:         -Wall
